@@ -168,6 +168,8 @@ class VideoNode(Node):
         if options:
             backend.set_options(options)
 
+        backend.is_secure = True
+
         return backend
 
     @classmethod
